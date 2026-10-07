@@ -1,0 +1,14 @@
+/* Global page styles */
+:root {
+    --brand-amber: #d97706;
+    --brand-emerald: #059669;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Shared image fallback keeps remote catalog images from breaking the layout. */
+img {
+    color: #64748b;
+}

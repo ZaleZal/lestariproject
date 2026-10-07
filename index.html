@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lestari Project - Percetakan & Packaging Bandung</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-auto h-12 flex items-center justify-center shrink-0">
+                    <img src="https://i.postimg.cc/bv7pBnjm/lestariproject-jpg.jpg" alt="Logo Lestari Project" class="max-w-full h-12 object-contain" onerror="this.src='https://via.placeholder.com/150?text=Lestari+Project'">
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight text-slate-900 block leading-none">Lestari Project</span>
+                    <span class="text-xs font-medium text-amber-600 tracking-wider uppercase mt-1 block">Percetakan & Packaging</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+                <a href="#beranda" class="hover:text-amber-600 transition">Beranda</a>
+                <a href="#katalog" onclick="resetCategory()" class="hover:text-amber-600 transition">Katalog Produk</a>
+                <a href="#tentang" class="hover:text-amber-600 transition">Tentang Kami</a>
+                <a href="#kontak" class="hover:text-amber-600 transition">Kontak</a>
+            </nav>
+
+            <div class="flex items-center space-x-3">
+                <a href="https://wa.me/6285176776783?text=Halo%20Lestari%20Project,%20saya%20mau%20konsultasi%20cetak..." target="_blank" class="inline-flex items-center justify-center bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-5 py-2.5 rounded-xl text-sm transition shadow-lg shadow-emerald-600/20">
+                    <i class="fa-brands fa-whatsapp mr-2 text-base"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 bg-gradient-to-b from-amber-50/50 via-white to-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-amber-100/80 text-amber-800 text-xs font-bold px-3.5 py-1.5 rounded-full">
+                        <i class="fa-solid fa-star text-amber-500"></i>
+                        <span>Pusat Kemasan & Cetak Berkualitas di Bandung</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+                        Wujudkan Cetakan & Kemasan Terbaik untuk <span class="text-amber-600 underline decoration-amber-300 decoration-wavy underline-offset-8">Usaha Anda</span>
+                    </h1>
+                    <p class="text-lg text-slate-600 max-w-xl mx-auto lg:mx-0">
+                        Spesialis Dus Kemasan, Undangan Eksklusif, Nota NCR Berwarna, Buku Yasin, hingga Hangtag berkualitas tinggi dengan variasi lengkap sesuai kebutuhan Anda.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#katalog" class="w-full sm:w-auto bg-amber-600 hover:bg-amber-700 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-amber-600/25 transition text-center">
+                            Pilih Kategori Produk
+                        </a>
+                        <a href="https://wa.me/6285176776783?text=Halo%20Lestari%20Project,%20saya%20mau%20tanya-tanya%20spesifikasi%20produk." target="_blank" class="w-full sm:w-auto bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 font-bold px-8 py-4 rounded-xl transition text-center flex items-center justify-center">
+                            <i class="fa-brands fa-whatsapp text-emerald-600 mr-2 text-xl"></i> Chat Admin
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-4 bg-gradient-to-tr from-amber-500 to-amber-300 rounded-3xl opacity-25 blur-xl"></div>
+                        <div class="relative bg-white rounded-3xl shadow-2xl p-6 border border-slate-100">
+                            <div class="bg-amber-50 rounded-2xl p-6 text-center space-y-4">
+                                <div class="w-16 h-16 text-amber-600 rounded-2xl mx-auto flex items-center justify-center text-3xl shadow-lg p-1 bg-white">
+                                     <img src="https://i.postimg.cc/bv7pBnjm/lestariproject-jpg.jpg" alt="Logo Lestari Project" class="max-w-full max-h-full object-contain" onerror="this.src='https://via.placeholder.com/150?text=LP'">
+                                </div>
+                                <h3 class="text-xl font-bold text-slate-900">Lestari Project</h3>
+                                <p class="text-xs text-slate-600">Jl. Pagarsih No. 143b, Bandung</p>
+                                <div class="pt-2 border-t border-amber-200/60 text-left space-y-2 text-xs text-slate-700">
+                                    <div class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Dus Kemasan (Duplex/Ivory/Kraft + Laminasi)</div>
+                                    <div class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Undangan Soft & Hard Cover Amplop</div>
+                                    <div class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Nota NCR & Buku Yasin Custom</div>
+                                    <div class="flex items-center"><i class="fa-solid fa-check text-emerald-600 mr-2"></i> Hangtag Brand Berbagai Bahan</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Katalog Produk & Kategori -->
+    <section id="katalog" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                <span class="text-xs font-bold uppercase tracking-widest text-amber-600 bg-amber-50 px-3 py-1 rounded-full">Katalog & Spesifikasi</span>
+                <h2 id="katalog-title" class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Pilih Kategori Produk</h2>
+                <p id="katalog-desc" class="text-slate-600">Klik salah satu kategori di bawah ini untuk melihat detail produk dan variasi pilihannya.</p>
+            </div>
+
+            <!-- Tombol Kembali jika sedang membuka produk dalam kategori -->
+            <div id="back-button-container" class="mb-8 hidden">
+                <button onclick="resetCategory()" class="inline-flex items-center text-sm font-bold text-amber-600 hover:text-amber-700 bg-amber-50 px-4 py-2 rounded-xl transition">
+                    <i class="fa-solid fa-arrow-left mr-2"></i> Kembali ke Semua Kategori
+                </button>
+            </div>
+
+            <!-- Bagian Kategori Utama (Tampil di awal) -->
+            <div id="category-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Diisi via Javascript -->
+            </div>
+
+            <!-- Bagian Grid Produk (Tampil setelah kategori diklik) -->
+            <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 hidden">
+                <!-- Diisi via Javascript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami & Lokasi -->
+    <section id="tentang" class="py-20 bg-slate-50 border-t border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-600 bg-amber-100/80 px-3 py-1 rounded-full">Tentang Lestari Project</span>
+                    <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Mitra Cetak & Kemasan Terpercaya di Bandung</h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        Lestari Project berlokasi di Jl. Pagarsih No. 143b, Bandung. Kami siap melayani kebutuhan cetak skala menengah hingga besar dengan harga bersahabat dan variasi bahan terlengkap.
+                    </p>
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center shrink-0 font-bold">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Alamat Workshop</h4>
+                                <p class="text-sm text-slate-600">Jalan Pagarsih No. 143b, Bandung</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center shrink-0 font-bold">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">WhatsApp Layanan</h4>
+                                <p class="text-sm text-slate-600">0851-7677-6783</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-amber-600 rounded-3xl p-8 lg:p-12 text-white shadow-xl">
+                    <h3 class="text-2xl font-bold mb-4">Konsultasi Custom & Pemesanan</h3>
+                    <p class="text-amber-100 mb-6 text-sm leading-relaxed">
+                        Punya spesifikasi khusus di luar variasi yang tersedia? Hubungi tim kami langsung via WhatsApp untuk konsultasi cepat.
+                    </p>
+                    <a href="https://wa.me/6285176776783?text=Halo%20Lestari%20Project,%20saya%20mau%20konsultasi%20cetak%20custom." target="_blank" class="inline-flex items-center justify-center bg-white text-amber-700 hover:bg-amber-50 font-bold px-6 py-3 rounded-xl transition shadow-md w-full sm:w-auto">
+                        <i class="fa-brands fa-whatsapp text-emerald-600 mr-2 text-lg"></i> Hubungi WhatsApp Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak" class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+                <div class="text-white font-extrabold text-xl tracking-tight mb-1">Lestari Project</div>
+                <p class="text-xs text-slate-400">Jalan Pagarsih No. 143b, Bandung • Telp/WA: 085176776783</p>
+            </div>
+            <p class="text-xs text-slate-500">© 2026 Lestari Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Data dan logika aplikasi dipisahkan agar mudah dirawat. -->
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
+<!-- Legacy inline application code removed; source now lives in assets/js/data.js and assets/js/app.js.
+            {
+                id: 1,
+                categoryId: "dus-kemasan",
+                name: "Dus Martabak",
+                price: 850,
+                unit: "pcs (Min. 2.000 pcs)",
+                desc: "Dus martabak manis/asin kokoh dengan opsi laminasi anti air & minyak.",
+                image: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80",
+                features: [
+                    "Pilihan Bahan: Duplex, Ivory, atau Kraft",
+                    "Laminasi Dalam: Tersedia opsi anti air & minyak",
+                    "Ketahanan kokoh dan cetakan tajam"
+                ]
+            },
+            {
+                id: 2,
+                categoryId: "dus-kemasan",
+                name: "Dus Nasi Box (S, M, L)",
+                price: 950,
+                unit: "pcs (Min. 2.000 pcs)",
+                desc: "Dus nasi box higienis ukuran S, M, L dengan pilihan bahan berkualitas.",
+                image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80",
+                features: [
+                    "Pilihan Ukuran: S, M, dan L",
+                    "Pilihan Bahan: Duplex, Ivory, atau Kraft",
+                    "Laminasi Dalam: Aman dari rembes minyak"
+                ]
+            },
+            {
+                id: 3,
+                categoryId: "dus-kemasan",
+                name: "Dus Kemasan Custom Lainnya",
+                price: 1000,
+                unit: "pcs (Min. 2.000 pcs)",
+                desc: "Cetak dus kue, dus produk, atau kemasan custom ukuran khusus.",
+                image: "https://images.unsplash.com/photo-1607344645866-009c320c5ab8?auto=format&fit=crop&w=600&q=80",
+                features: [
+                    "Pilihan Bahan: Duplex, Ivory, atau Kraft",
+                    "Ukuran dan bentuk bisa disesuaikan kebutuhan usaha"
+                ]
+            },
+            {
+                id: 4,
+                categoryId: "undangan",
+                name: "Undangan Soft Cover",
+                price: 1000,
+                unit: "lembar (Min. 100 pcs)",
+                desc: "Undangan pernikahan/acara soft cover elegan berbahan kertas BC berkualitas.",
+                image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80",
+                features: [
+                    "Bahan: Kertas BC berkualitas",
+                    "Desain elegan dan cetakan tajam",
+                    "Minimum order terjangkau (100 pcs)"
+                ]
+            },
+            {
+                id: 5,
+                categoryId: "undangan",
+                name: "Undangan Hardcover Amplop",
+                price: 4000,
+                unit: "lembar (Min. 300 pcs)",
+                desc: "Undangan hardcover bentuk amplop eksklusif dengan finishing rapi.",
+                image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80",
+                features: [
+                    "Pilihan Bahan Cover: Kertas BC atau Art Paper",
+                    "Bentuk amplop eksklusif & kokoh",
+                    "Finishing rapi & elegan"
+                ]
+            },
+            {
+                id: 6,
+                categoryId: "nota",
+                name: "Nota / Faktur / Surat Jalan (NCR)",
+                price: 150000,
+                unit: "rim",
+                desc: "Nota NCR rangkap, bebas pilih warna kertas dan bisa tambah nomorator.",
+                image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80",
+                features: [
+                    "Pilihan Rangkap: 1, 2, atau 3 Rangkap",
+                    "Warna Kertas NCR: Putih, Kuning, Merah, Biru",
+                    "Tersedia opsi tambahan nomorator (nomor urut)"
+                ]
+            },
+            {
+                id: 7,
+                categoryId: "buku-yasin",
+                name: "Buku Yasin Soft Cover",
+                price: 7000,
+                unit: "buku (Min. 30 pcs)",
+                desc: "Cetak buku Yasin kenangan tahlilan dengan berbagai pilihan halaman.",
+                image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80",
+                features: [
+                    "Pilihan Halaman: 96 Halaman atau 148 Halaman",
+                    "Cover bisa dipilih sesuai keinginan",
+                    "Minimum order 30 pcs"
+                ]
+            },
+            {
+                id: 8,
+                categoryId: "buku-yasin",
+                name: "Buku Yasin Hard Cover",
+                price: 18000,
+                unit: "buku (Min. 30 pcs)",
+                desc: "Buku Yasin hardcover eksklusif isian 148 halaman dengan warna cover bebas pilih.",
+                image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=80",
+                features: [
+                    "Isian Halaman: 148 Halaman",
+                    "Pilihan Warna Cover: Hijau, Biru, Hitam, Maroon, Gold, dll",
+                    "Tampilan hardcover eksklusif"
+                ]
+            },
+            {
+                id: 9,
+                categoryId: "hangtag",
+                name: "Hangtag / Label Produk Brand",
+                price: 150,
+                unit: "pcs (Min. 500 pcs)",
+                desc: "Hangtag baju, label brand, souvenir dengan bahan dan laminasi pilihan.",
+                image: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=600&q=80",
+                features: [
+                    "Pilihan Bahan: Kraft, Art Paper, Ivory, atau Duplex",
+                    "Cetak: 1 Muka atau Bolak-Balik (2 Muka)",
+                    "Laminasi: Tersedia Glossy atau Doff"
+                ]
+            }
+        ];
+
+        let currentCategory = null;
+
+        // Render Kategori Utama di awal
+        function renderCategories() {
+            const grid = document.getElementById('category-grid');
+            document.getElementById('category-grid').classList.remove('hidden');
+            document.getElementById('product-grid').classList.add('hidden');
+            document.getElementById('back-button-container').classList.add('hidden');
+            document.getElementById('katalog-title').innerText = "Pilih Kategori Produk";
+            document.getElementById('katalog-desc').innerText = "Klik salah satu kategori di bawah ini untuk melihat detail produk dan variasi pilihannya.";
+
+            grid.innerHTML = categories.map(cat => `
+                <div onclick="selectCategory('${cat.id}')" class="bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group cursor-pointer">
+                    <div class="relative h-48 overflow-hidden bg-slate-100">
+                        <img src="${cat.image}" alt="${cat.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/10 transition"></div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-3 text-center">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-amber-600 text-white flex items-center justify-center text-xl shadow-md mx-auto -mt-12 relative z-10 mb-3 group-hover:scale-110 transition">
+                                <i class="fa-solid ${cat.icon}"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-amber-600 transition">${cat.name}</h3>
+                            <p class="text-xs text-slate-500 mt-1">${cat.desc}</p>
+                        </div>
+                        <div class="pt-2 text-xs font-bold text-amber-600 group-hover:underline">
+                            Lihat Detail Produk <i class="fa-solid fa-arrow-right ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Ketika Kategori diklik
+        function selectCategory(catId) {
+            currentCategory = catId;
+            const categoryData = categories.find(c => c.id === catId);
+            const filteredProducts = products.filter(p => p.categoryId === catId);
+
+            document.getElementById('category-grid').classList.add('hidden');
+            document.getElementById('product-grid').classList.remove('hidden');
+            document.getElementById('back-button-container').classList.remove('hidden');
+            document.getElementById('katalog-title').innerText = categoryData.name;
+            document.getElementById('katalog-desc').innerText = categoryData.desc;
+
+            const grid = document.getElementById('product-grid');
+            grid.innerHTML = filteredProducts.map(p => {
+                // Buat list fitur berpoin-poin
+                let featuresHtml = p.features.map(feat => `
+                    <li class="flex items-start text-xs text-slate-600">
+                        <i class="fa-solid fa-check text-amber-600 mt-0.5 mr-2 shrink-0"></i>
+                        <span>${feat}</span>
+                    </li>
+                `).join('');
+
+                // Pesan WhatsApp khusus untuk produk ini
+                const waText = encodeURIComponent(`Halo Lestari Project, saya ingin konsultasi dan pemesanan untuk produk *${p.name}*. Mohon informasi lebih lanjut.`);
+
+                return `
+                    <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group">
+                        <div class="relative h-48 overflow-hidden bg-slate-100">
+                            <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-900 group-hover:text-amber-600 transition">${p.name}</h3>
+                                <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">${p.desc}</p>
+                            </div>
+                            
+                            <!-- Poin-poin Spesifikasi/Variasi -->
+                            <div class="bg-amber-50/50 p-3.5 rounded-xl border border-amber-200/50">
+                                <span class="block text-[11px] font-bold text-slate-700 uppercase mb-2">Pilihan & Spesifikasi:</span>
+                                <ul class="space-y-1.5">
+                                    ${featuresHtml}
+                                </ul>
+                            </div>
+
+                            <div>
+                                <div class="flex items-baseline justify-between mb-4 pt-2 border-t border-slate-100">
+                                    <span class="text-xs font-medium text-slate-400">Harga mulai</span>
+                                    <div class="text-right">
+                                        <span class="text-lg font-extrabold text-amber-600">Rp ${p.price.toLocaleString('id-ID')}</span>
+                                        <span class="text-[11px] text-slate-500 block">per ${p.unit}</span>
+                                    </div>
+                                </div>
+                                <a href="https://wa.me/6285176776783?text=${waText}" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold py-3.5 px-4 rounded-xl transition flex items-center justify-center shadow-md shadow-emerald-600/20">
+                                    <i class="fa-brands fa-whatsapp mr-2 text-base"></i> Konsultasi dan pemesanan via admin whatsapp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            // Scroll ke atas katalog biar pas dilihat
+            document.getElementById('katalog').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function resetCategory() {
+            currentCategory = null;
+            renderCategories();
+        }
+
+        // Initialize Beranda (Render Kategori)
+        renderCategories();
+    </script> -->
+</body>
+</html>
